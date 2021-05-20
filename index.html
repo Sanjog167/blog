@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>1Blog</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+    <!-- STYLES -->
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="css/all.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/slick.css" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      href="css/simple-line-icons.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- site wrapper -->
+    <div class="site-wrapper">
+      <div class="main-overlay"></div>
+
+      <!-- header -->
+      <header class="header-default">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-xl">
+            <!-- site logo -->
+            <a class="navbar-brand" href="index.html"
+              ><img src="images/logo.png" alt="logo"
+            /></a>
+
+            <div class="mid_header">
+              <div class="headerinput">
+                <form>
+                  <input placeholder="Search here.." />
+                  <button type="submit">
+                    Search <i class="fa fa-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- header right section -->
+            <div class="header-right">
+              <!-- social icons -->
+
+              <!-- header buttons -->
+              <div class="header-buttons">
+                <button class="bell icon-button">
+                  <img src="images/bell.svg" />
+                </button>
+                <button class="burger-menu icon-button">
+                  <img src="images/square.svg" />
+                </button>
+                <button class="user icon-button">
+                  <img src="images/user.svg" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="banner_main">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-12">
+				<div class="mainoneimg"> 
+              <img src="images/banner1.jpg" class="one" />
+			</div>
+              <div class="row none">
+                <div class="col-lg-4">
+                  <img src="images/two.jpeg" />
+                </div>
+                <div class="col-lg-4">
+                  <img src="images/three.jpeg" />
+                </div>
+                <div class="col-lg-4">
+                  <img src="images/four.jpeg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-12 right">
+              <div class="banner_right">
+
+				<div class="banner_buttons">
+					<button class="popular">Popular</button>
+					<button class="recent">Recent</button>
+				</div>
+
+
+                <div class="all_list">
+                  <div class="list1">
+                    <img src="images/banner1.jpg" class="avatar" />
+                    <div class="list1_content">
+                      <h4>3 Easy Ways To Make Your iPhone Faster</h4>
+                      <p>29 March 2021</p>
+                    </div>
+                  </div>
+                  <div class="list1">
+                    <img src="images/two.jpeg" class="avatar" />
+                    <div class="list1_content">
+                      <h4>3 Easy Ways To Make Your iPhone Faster</h4>
+                      <p>1 April 2021</p>
+                    </div>
+                  </div>
+                  <div class="list1">
+                    <img src="images/three.jpeg" class="avatar" />
+                    <div class="list1_content">
+                      <h4>
+                        03 Man Arrested at Airport for Trying Breach a Security
+                        Checkpoint
+                      </h4>
+                      <p>3 April 2021</p>
+                    </div>
+                  </div>
+                  <div class="list1">
+                    <img src="images/four.jpeg" class="avatar" />
+                    <div class="list1_content">
+                      <h4>
+                        Health Canada approves AstraZeneca's COVID-19 vaccine
+                      </h4>
+                      <p>29 March 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	  <div class="latest_post">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-lg-9">
+					  <div class="latest_post_tit">
+						  <h3>Latest Posts</h3>
+						  <a href="#">View All</a>
+					  </div>
+					  <div class="acctabs">
+						<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+							<li class="nav-item" role="presentation">
+							  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All Posts</button>
+							</li>
+							<li class="nav-item" role="presentation">
+							  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Education</button>
+							</li>
+							<li class="nav-item" role="presentation">
+							  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Technology</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Business</button>
+							  </li>
+							  <li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Tips & Tricks</button>
+							  </li>
+							  <li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Travel Blogs</button>
+							  </li>
+							  <li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews</button>
+							  </li>
+							  <li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Finance</button>
+							  </li>
+							  <li class="nav-item" role="presentation">
+								<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Lifestyle</button>
+							  </li>
+						  </ul>
+						  <div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+								<div class="row">
+									<div class="col-lg-3 col-md-6 col-12">
+										<div class="postone">
+											<div class="post_image">
+												<img src="images/post1.jpeg">
+											</div>
+											<div class="mainpost"> 
+											<div class="post_who">
+												<img src="images/post1.jpeg" class="avatar">
+												<p>Sanjog Piya</p>
+											</div>
+											<div class="post_quest">
+												<h3>Make Blogging Full-Time Business
+												</h3>
+											</div>
+											<div class="post_content">
+												<p>Learn to launch a successful niche blog and grow it to become financially independent.</p>
+											</div>
+											<div class="post_time">
+												<div class="admin">
+													<i class="fa fa-user"></i>
+													<p>By Admin</p>
+												</div>
+												<div class="time">
+													<i class="fa fa-clock"></i>
+													<p>May 18, 2021</p>
+												</div>
+											</div>
+										</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-6 col-12">
+										<div class="postone">
+											<div class="post_image">
+												<img src="images/post2.jpeg">
+											</div>
+											<div class="mainpost"> 
+											<div class="post_who">
+												<img src="images/post2.jpeg" class="avatar">
+												<p>Sanjog Piya</p>
+											</div>
+											<div class="post_quest">
+												<h3>Make Blogging Full-Time Business
+												</h3>
+											</div>
+											<div class="post_content">
+												<p>Learn to launch a successful niche blog and grow it to become financially independent.</p>
+											</div>
+											<div class="post_time">
+												<div class="admin">
+													<i class="fa fa-user"></i>
+													<p>By Admin</p>
+												</div>
+												<div class="time">
+													<i class="fa fa-clock"></i>
+													<p>May 18, 2021</p>
+												</div>
+											</div>
+										</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-6 col-12">
+										<div class="postone">
+											<div class="post_image">
+												<img src="images/post3.jpeg">
+											</div>
+											<div class="mainpost"> 
+											<div class="post_who">
+												<img src="images/post3.jpeg" class="avatar">
+												<p>Sanjog Piya</p>
+											</div>
+											<div class="post_quest">
+												<h3>Make Blogging Full-Time Business
+												</h3>
+											</div>
+											<div class="post_content">
+												<p>Learn to launch a successful niche blog and grow it to become financially independent.</p>
+											</div>
+											<div class="post_time">
+												<div class="admin">
+													<i class="fa fa-user"></i>
+													<p>By Admin</p>
+												</div>
+												<div class="time">
+													<i class="fa fa-clock"></i>
+													<p>May 18, 2021</p>
+												</div>
+											</div>
+										</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-6 col-12">
+										<div class="postone">
+											<div class="post_image">
+												<img src="images/post4.jpeg">
+											</div>
+											<div class="mainpost"> 
+											<div class="post_who">
+												<img src="images/post4.jpeg" class="avatar">
+												<p>Sanjog Piya</p>
+											</div>
+											<div class="post_quest">
+												<h3>Make Blogging Full-Time Business
+												</h3>
+											</div>
+											<div class="post_content">
+												<p>Learn to launch a successful niche blog and grow it to become financially independent.</p>
+											</div>
+											<div class="post_time">
+												<div class="admin">
+													<i class="fa fa-user"></i>
+													<p>By Admin</p>
+												</div>
+												<div class="time">
+													<i class="fa fa-clock"></i>
+													<p>May 18, 2021</p>
+												</div>
+											</div>
+										</div>
+										</div>
+									</div>
+								
+								
+								</div>
+
+
+							
+							
+							</div>
+							<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+							<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+						  </div>
+					  </div>
+				  </div>
+
+				  <div class="col-lg-3">
+					  <div class="exploretopics">
+						  <div class="explore_topics_head">
+							  <h3>Explore Our Topics</h3>
+						  </div>
+						  <div class="top_list_starts">
+							  <div class="topic1">
+								  <div class="topic1witharrow">
+									  <i class="fa fa-chevron-right"></i>
+									  <p>Lifestyle</p>
+								  </div>
+								  <div class="topicamount">
+									  <p>(5)</p>
+								  </div>
+							  </div>
+							  <div class="topic1">
+								<div class="topic1witharrow">
+									<i class="fa fa-chevron-right"></i>
+									<p>Inspiration</p>
+								</div>
+								<div class="topicamount">
+									<p>(5)</p>
+								</div>
+							</div>
+							<div class="topic1">
+								<div class="topic1witharrow">
+									<i class="fa fa-chevron-right"></i>
+									<p>Fashion</p>
+								</div>
+								<div class="topicamount">
+									<p>(5)</p>
+								</div>
+							</div>
+							<div class="topic1">
+								<div class="topic1witharrow">
+									<i class="fa fa-chevron-right"></i>
+									<p>Politic</p>
+								</div>
+								<div class="topicamount">
+									<p>(5)</p>
+								</div>
+							</div>
+							<div class="topic1">
+								<div class="topic1witharrow">
+									<i class="fa fa-chevron-right"></i>
+									<p>Trending</p>
+								</div>
+								<div class="topicamount">
+									<p>(5)</p>
+								</div>
+							</div>
+							<div class="topic1">
+								<div class="topic1witharrow">
+									<i class="fa fa-chevron-right"></i>
+									<p>Culture</p>
+								</div>
+								<div class="topicamount">
+									<p>(5)</p>
+								</div>
+							</div>
+							<div class="topic1">
+								<div class="topic1witharrow">
+									<i class="fa fa-chevron-right"></i>
+									<p>News</p>
+								</div>
+								<div class="topicamount">
+									<p>(5)</p>
+								</div>
+							</div>
+						  </div>
+					  </div>
+				  </div>
+
+
+			  </div>
+		  </div>
+	  </div>
+
+	  <div class="trending_posts">
+		  <div class="container">
+			<div class="latest_post_tit">
+				<h3>Trending Posts</h3>
+				<a href="#">View All</a>
+			</div>
+
+			<div class="list_trending">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-12">
+						<div class="list_trend_starts">
+							<img src="images/t1.jpeg">
+							<div class="list_trend_content">
+								<h3>Every household to get prepaid blank postcard courtesy of News.</h3>
+							<div class="list_trend_para">
+								<p>Let’s welcome the new month with some fresh wallpapers. Designed with love by artists from across the globe.</p>
+							</div>
+							<div class="abs_time">
+								<p>May 3, 2021</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<div class="list_trend_starts">
+							<img src="images/t2.jpeg">
+							<div class="list_trend_content">
+								<h3>Every household to get prepaid blank postcard courtesy of News.</h3>
+							<div class="list_trend_para">
+								<p>Let’s welcome the new month with some fresh wallpapers. Designed with love by artists from across the globe.</p>
+							</div>
+							<div class="abs_time">
+								<p>May 4, 2021</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<div class="list_trend_starts">
+							<img src="images/t3.jpeg">
+							<div class="list_trend_content">
+								<h3>Every household to get prepaid blank postcard courtesy of News.</h3>
+							<div class="list_trend_para">
+								<p>Let’s welcome the new month with some fresh wallpapers. Designed with love by artists from across the globe.</p>
+							</div>
+							<div class="abs_time">
+								<p>May 5, 2021</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<div class="list_trend_starts">
+							<img src="images/t4.jpeg">
+							<div class="list_trend_content">
+								<h3>Every household to get prepaid blank postcard courtesy of News.</h3>
+							<div class="list_trend_para">
+								<p>Let’s welcome the new month with some fresh wallpapers. Designed with love by artists from across the globe.</p>
+							</div>
+							<div class="abs_time">
+								<p>May 6, 2021</p>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		  </div>
+	  </div>
+
+	  <div class="inspiration">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="latest_post_tit">
+						<h3>Inspiration</h3>
+						<a href="#">View All</a>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="an1">
+								<img src="images/ins1.jpeg">
+								<div class="an_content">
+									<h3>Chosen the long the coast right it aside, moving how feel in way.</h3>
+									<p>
+										A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy
+									</p>
+									<a href="#">Read More <i class="fa fa-arrow-right"></i> </a>
+								</div>
+								
+							</div>
+							<div class="an1">
+								<img src="images/ins4.jpeg">
+								<div class="an_content">
+									<h3>Chosen the long the coast right it aside, moving how feel in way.</h3>
+									<p>
+										A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy
+									</p>
+									<a href="#">Read More <i class="fa fa-arrow-right"></i> </a>
+								</div>
+								
+							</div>
+						
+						</div>
+						<div class="col-lg-6">
+							<div class="an1">
+								<img src="images/ins2.jpeg">
+								<div class="an_content">
+									<h3>Chosen the long the coast right it aside, moving how feel in way.</h3>
+									<p>
+										A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy
+									</p>
+									<a href="#">Read More <i class="fa fa-arrow-right"></i> </a>
+								</div>
+								
+							</div>
+							<div class="an1">
+								<img src="images/ins3.jpeg">
+								<div class="an_content">
+									<h3>Chosen the long the coast right it aside, moving how feel in way.</h3>
+									<p>
+										A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy
+									</p>
+									<a href="#">Read More <i class="fa fa-arrow-right"></i> </a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="col-lg-3">
+					<div class="col_news">
+						<div class="news_icon">
+							<img src="images/news.png">
+						</div>
+						<div class="get_news">
+							<h3>
+								Get Newsletter
+							</h3>
+							<p>
+							Sign in to our Newsletter and get weekly updates.
+							</p>
+						</div>
+						<div class="news_field">
+							<input type="text" placeholder="Enter your email id">
+						</div>
+						<div class="news_button">
+							<button type="submit">
+								<img src="images/mail.svg">  Subscribe Now
+							</button>
+						</div>
+					</div>
+
+					<div class="ad_image">
+						<img src="images/01 (1).png">
+						<div class="ad_content">
+							<h3>Make Your Descision and move forward.</h3>
+							<p>
+								Get 50% Off on every purchase.
+							</p>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</div> 
+	  </div>
+
+	  <div class="allcat">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 cat cat1">
+					<img src="images/post1.jpeg">
+					<p>Lifestyle</p>
+				</div>
+				<div class="col-lg-3 cat cat1">
+				  <img src="images/post2.jpeg">
+				  <p>Inspiration</p>
+			  </div>
+			  <div class="col-lg-3 cat cat1">
+				  <img src="images/post3.jpeg">
+				  <p>Fashion</p>
+			  </div>
+			  <div class="col-lg-3 cat cat1">
+				  <img src="images/post4.jpeg">
+				  <p>Politic</p>
+			  </div>
+			  <div class="col-lg-3 cat">
+				  <img src="images/t1.jpeg">
+				  <p>Trending</p>
+			  </div>
+			  <div class="col-lg-3 cat">
+				  <img src="images/t2.jpeg">
+				  <p>Culture</p>
+			  </div>
+			  <div class="col-lg-3 cat">
+				  <img src="images/t3.jpeg">
+				  <p>Recent</p>
+			  </div>
+			  <div class="col-lg-3 cat">
+				  <img src="images/t4.jpeg">
+				  <p>Motivation</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	  <div class="midad">
+		  <div class="container"> 
+		  <img src="images/B_BML_S_27_120201127153202.gif">
+		</div>
+	  </div>
+
+	  <div class="contact_form">
+		  <div class="conimg"> 
+		  <img src="images/pexels-photo-821754.jpeg">
+		  <div class="contact_content">
+			<h3>Get In Touch</h3>
+			<p>
+				Please get in touch and our expert support team will answer all your questions.
+			</p>
+		  </div>
+		  </div>
+	  </div>
+
+	  <div class="realform">
+
+		<div class="sendus">
+			<h3>Send us a Message</h3>
+			<img src="images/email.svg">
+		</div>
+
+		<form>
+			<div class="form-row">
+			  <div class="form-group col-md-6 fn">
+				<label for="inputEmail4">Your First Name</label>
+				<input type="text" class="form-control" id="inputEmail4">
+			  </div>
+			  <div class="form-group col-md-6">
+				<label for="inputPassword4">Your Last Name</label>
+				<input type="text" class="form-control" id="inputPassword4">
+			  </div>
+			</div>
+		
+			<div class="form-row">
+			  <div class="form-group col-md-6 fn">
+				<label for="inputCity">Your Email</label>
+				<input type="email" class="form-control" id="inputCity">
+			  </div>
+			  <div class="form-group col-md-6">
+				<label for="inputState">Your Phone Number</label>
+				<input type="text" class="form-control" id="inputCity">
+			  </div>
+			
+			</div>
+
+			<div class="form-group">
+			<label for="exampleFormControlTextarea1">Your Message</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+			</div>
+
+			<button type="submit">
+				Submit
+			</button>
+		</form>
+
+
+	  </div>
+
+	  <div class="fixedfoot">
+		  <div class="container"> 
+			<div class="foot1">
+				<button class="search icon-button">
+					<img src="images/home.svg" />
+				  </button>
+				  <p>Home</p>
+			  </div>
+			  
+		  <div class="foot1">
+			<button class="search icon-button">
+			<img src="images/magnifying-glass.svg">
+			<p>Search</p>
+			</button>
+		  </div>
+
+		  <div class="foot1">
+			<button class="bell icon-button">
+				<img src="images/bell.svg" />
+			  </button>
+			  <p>Notifications</p>
+		  </div>
+
+		  <div class="foot1">
+			<button class="user icon-button">
+				<img src="images/user.svg" />
+				<p>Account</p>
+			  </button>
+		  </div>
+
+
+	
+		</div>
+	  </div>
+
+
+
+
+
+    </div>
+    <!-- end site wrapper -->
+
+    <!-- canvas menu -->
+    <div class="canvas-menu d-flex align-items-end flex-column">
+      <!-- close button -->
+      <button type="button" class="btn-close" aria-label="Close"></button>
+
+      <!-- logo -->
+      <div class="logo">
+        <img src="images/logo.svg" alt="Katen" />
+      </div>
+
+      <!-- menu -->
+      <nav>
+        <ul class="vertical-menu">
+          <li class="active">
+            <a href="index.html">Home</a>
+            <ul class="submenu">
+              <li><a href="index.html">Magazine</a></li>
+              <li><a href="personal.html">Personal</a></li>
+              <li><a href="personal-alt.html">Personal Alt</a></li>
+              <li><a href="minimal.html">Minimal</a></li>
+              <li><a href="classic.html">Classic</a></li>
+            </ul>
+          </li>
+          <li><a href="category.html">Lifestyle</a></li>
+          <li><a href="category.html">Inspiration</a></li>
+          <li>
+            <a href="#">Pages</a>
+            <ul class="submenu">
+              <li><a href="category.html">Category</a></li>
+              <li><a href="blog-single.html">Blog Single</a></li>
+              <li><a href="blog-single-alt.html">Blog Single Alt</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- social icons -->
+      <ul class="social-icons list-unstyled list-inline mb-0 mt-auto w-100">
+        <li class="list-inline-item">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fab fa-medium"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
+
+	<div class="search-popup">
+		<!-- close button -->
+		<button type="button" class="btn-close" aria-label="Close"></button>
+		<!-- content -->
+		<div class="search-content">
+			<div class="text-center">
+				<h3 class="mb-4 mt-0">Press ESC to close</h3>
+			</div>
+			<!-- form -->
+			<form class="d-flex search-form">
+				<input class="form-control" type="search" placeholder="Search here ..." aria-label="Search">
+				<button class="btn btn-default btn-lg" type="submit"><i class="icon-magnifier"></i></button>
+			</form>
+		</div>
+	</div>
+
+    <!-- JAVA SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.sticky-sidebar.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
