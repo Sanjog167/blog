@@ -1,35 +1,3 @@
-@charset "UTF-8";
-/*
-Template Name: Katen
-Version: 1.0
-Author: ThemeGer
-Author URI: http://themeforest.net/user/themeger
-Description: Minimal Blog and Magazine HTML Template
-
-[TABLE OF CONTENTS]
-
-01. Base
-02. Preloader
-03. Typography
-04. Header
-05. Sections
-06. Post
-07. About author
-08. Post comments
-09. Page
-10. Contact
-11. Widgets
-12. Instagram feed
-13. Footer
-14. Search Popup
-15. Helpers
-16. Buttons
-17. Bootstrap Elements
-18. Theme Elements
-19. Slick Settings
-20. Responsive Settings
-
-*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&amp;display=swap");
 /*=================================================================*/
@@ -41,9 +9,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 1.7;
-  overflow-x: hidden;
+  overflow-x: hidden!important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 img {
@@ -1067,7 +1039,14 @@ section {
   outline: none;
   border-top-left-radius: 999px;
   border-bottom-left-radius: 999px;
+  transition: 200ms ease-out;
 }
+
+.mid_header input:hover{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
 
 .mid_header{
   width: 65%;
@@ -1787,12 +1766,12 @@ height: initial;
   bottom: 0;
   width: 100%;
   background: white;
-  padding: 10px;
+  padding: 8px;
   display: none;
 }
 
 .fixedfoot img{
-  width: 30px;
+  width: 24px;
 }
 
 .fixedfoot button{
@@ -1880,4 +1859,289 @@ height: initial;
 
 button{
   outline-width: 0;
+}
+
+
+#left_footer{
+  display: flex;
+}
+li{
+  list-style: none;
+}
+#footer_company {
+  padding-right: 50px;
+}
+#footer_company h4{
+  text-transform: uppercase;
+}
+.subscription h4{
+  text-transform: uppercase;
+}
+.subscription_input{
+  display: flex;
+  padding-top: 25 px;
+}
+.subscription input{
+  width: 25rem;
+}
+.subscription button{
+  padding: 5px 20px;
+}
+#footer_divider {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  flex-grow: 1;
+  height: 2px;
+  background: #adadad;
+}
+.contact p{
+  padding: 0;
+  margin: 0px 20px 0px 0px;
+
+}
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ph{
+  padding-right: 5px;
+  padding-top: 15px;
+}
+.contact i{
+  padding: 10px;
+  font-size: 30px;
+
+}
+.contact a{
+  text-decoration: none;
+  color: white;
+
+}
+.phone + .envelop{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer{
+  margin-top: 50px;
+  background: #26424e;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#footer_company h4{
+  color: white;
+  margin-bottom: 20px;
+}
+
+.subscription h4{
+  color: white;
+  margin-bottom: 20px;
+}
+
+.subscription_input button{
+  background:linear-gradient(-120deg, #021B79, #0575E6, #205E9B);
+  color: white;
+  border-radius: 0;
+  border: none;
+  outline-width: 0;
+  outline: none;
+}
+
+.subscription_input input{
+  outline-width: 0;
+}
+
+ .form-control:focus {
+  color: unset !important;
+  background-color: unset !important;
+  border-color: none !important;
+  outline: 0;
+  -webkit-box-shadow: unset !important;
+  box-shadow: unset !important;
+}
+
+.social-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.login_container{
+  margin: 3rem auto;
+  background-color: #5D5A89;
+  padding: 80px 20px;
+  border-radius: 10px;
+}
+
+.logform{
+  background-color: #f5f5f5;
+  padding: 20px 60px;
+}
+
+.logimg{
+  background:#403E56;
+  padding: 60px;
+}
+
+.logimg img{
+  width: 100%;
+}
+
+.logform h3{
+  font-size: 19px;
+  margin-bottom: 14px;
+}
+
+.logform .form-group{
+  margin-bottom: 20px;
+}
+
+.logform .form-group input{
+  border: none;
+  border-bottom: 1px solid lightgray;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.logform form button{
+  margin-top: 20px;
+  background-color: #FF5F00;
+  border: none;
+}
+
+.orsign{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.threebuttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.threebuttons button{
+  border: none;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  padding: 8px 18px;
+  color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.threebuttons i{
+  color: white;
+  margin-right: 10px;
+}
+
+.threebuttons button:first-child{
+  background-color:#3b5999;
+}
+
+.threebuttons button:nth-child(2){
+  background-color:#e4405f;
+}
+
+.threebuttons button:nth-child(3){
+  background-color:#dd4b39;
+}
+
+@media(max-width:992px){
+  #left_footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer .col-lg-3{
+    margin-bottom: 30px;
+  }
+
+  .subscription input {
+    width: 100%;
+}
+
+
+}
+
+#footer h4{
+  color: white;
+  margin-bottom: 20px;
+}
+
+@media(max-width:530px){
+  #bottom_footer{
+    display: none;
+  }
+
+  #footer_divider{
+    display: none;
+  }
+}
+
+@media(max-width:500px){
+  .footer{
+    margin-top: 50px;
+    background: #26424e;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 83px;
+  }
+}
+
+@media(max-width:500px){
+  .threebuttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+  button{
+    width: 100%;
+    margin-right: initial!important;
+  }
+}
+
+@media(max-width:505px){
+  .search-form button { 
+    width: 25%;
+}
+
+.logform {
+  background-color: #f5f5f5;
+  padding: 20px 20px;
+}
+
+}
+
+#left_footer i{
+  font-size: 10px!important;
+}
+
+#left_footer li{
+  margin-bottom: 10px;
+}
+
+#left_footer li:hover{
+  text-decoration: underline;
+}
+
+@media(max-width:1405px){
+  .post_time {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+}
 }

@@ -67,5 +67,7 @@ $(window).on("load", function () {
       $(".canvas-menu").removeClass("open");
       $(".main-overlay").removeClass("active");
     });
+
+
   });
 });

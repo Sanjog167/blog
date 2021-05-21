@@ -6,24 +6,24 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
 
     <!-- STYLES -->
     <link
       rel="stylesheet"
       href="css/bootstrap.min.css"
       type="text/css"
-      media="all"
     />
-    <link rel="stylesheet" href="css/all.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="css/slick.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/all.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/slick.css" type="text/css"/>
     <link
       rel="stylesheet"
       href="css/simple-line-icons.css"
       type="text/css"
-      media="all"
     />
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -62,15 +62,19 @@
 
               <!-- header buttons -->
               <div class="header-buttons">
+				<a href="#footer">
                 <button class="bell icon-button">
                   <img src="images/bell.svg" />
                 </button>
+				</a>
                 <button class="burger-menu icon-button">
                   <img src="images/square.svg" />
                 </button>
-                <button class="user icon-button">
+				<a href="#login_form">
+                <button class="user icon-button userbutton">
                   <img src="images/user.svg" />
                 </button>
+			</a>
               </div>
             </div>
           </div>
@@ -147,7 +151,7 @@
         </div>
       </div>
 
-	  <div class="latest_post">
+	  <div class="latest_post" data-aos="fade-up" id="latest">
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-lg-9">
@@ -317,8 +321,8 @@
 							
 							
 							</div>
-							<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-							<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+							<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">This is another tab</div>
+							<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">This is another tab</div>
 						  </div>
 					  </div>
 				  </div>
@@ -401,7 +405,7 @@
 		  </div>
 	  </div>
 
-	  <div class="trending_posts">
+	  <div class="trending_posts" data-aos="fade-up" id="trending">
 		  <div class="container">
 			<div class="latest_post_tit">
 				<h3>Trending Posts</h3>
@@ -473,7 +477,55 @@
 		  </div>
 	  </div>
 
-	  <div class="inspiration">
+	  <div class="login_container" data-aos="fade-up" id="login_form">
+		  <div class="container">
+			  <div class="row no-gutters">
+				<div class="col-lg-6 logimg">
+					<img src="images/undraw_unlock_24mb.svg">
+				</div>
+				<div class="col-lg-6 logform">
+					<h3>Log In</h3>
+					<form>
+						<div class="form-group">
+						  <label for="exampleInputEmail1">Email address</label>
+						  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+						  <label for="exampleInputPassword1">Password</label>
+						  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						</div>
+						<div class="form-check">
+						  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+						  <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Let Me In!</button>
+					  </form>
+
+					  <div class="orsign">
+						  <p>Sign Up With</p>
+					  </div>
+					  <div class="threebuttons">
+						  <button>
+							  <i class="fa fa-facebook"></i>
+							  <p>Facebook</p>
+						  </button>
+						  <button>
+							<i class="fa fa-instagram"></i>
+							<p>Instagram</p>
+						</button>
+						<button>
+							<i class="fa fa-google"></i>
+							<p>Google</p>
+						</button>
+					  </div>
+				</div>
+			  </div>
+		  </div>
+	  </div>
+
+
+	  <div class="inspiration" data-aos="fade-up" id="inspiration">
 		<div class="container">
 
 			<div class="row">
@@ -579,7 +631,7 @@
 		</div> 
 	  </div>
 
-	  <div class="allcat">
+	  <div class="allcat" data-aos="fade-up" id="all_cat">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 cat cat1">
@@ -618,13 +670,13 @@
 		</div>
 	</div>
 
-	  <div class="midad">
+	  <div class="midad" data-aos="fade-up">
 		  <div class="container"> 
 		  <img src="images/B_BML_S_27_120201127153202.gif">
 		</div>
 	  </div>
 
-	  <div class="contact_form">
+	  <div class="contact_form" data-aos="fade-up" id="contact">
 		  <div class="conimg"> 
 		  <img src="images/pexels-photo-821754.jpeg">
 		  <div class="contact_content">
@@ -636,7 +688,7 @@
 		  </div>
 	  </div>
 
-	  <div class="realform">
+	  <div class="realform" data-aos="fade-up">
 
 		<div class="sendus">
 			<h3>Send us a Message</h3>
@@ -680,10 +732,71 @@
 
 	  </div>
 
+	  <section class="footer" data-aos="fade-up">
+        <div class="container" id="footer">
+			<div class="row">
+				<div class="col-lg-8 col-12" id="left_footer">
+					<div class="col-lg-3 id="footer_company">
+						<h4>Company</h4>
+						<li><a><i class="fa fa-chevron-right"></i> About</a></li>
+						<li><a><i class="fa fa-chevron-right"></i> Blog</a></li>
+						<li><a><i class="fa fa-chevron-right"></i> Contact Us</a></li>
+						<li><a><i class="fa fa-chevron-right"></i> Meet the Team</a></li>
+					</div>
+					<div class="col-lg-3 id="footer_company">
+						<h4>Preferences</h4>
+						<li><a><i class="fa fa-chevron-right"></i> Art</a></li>
+						<li><a><i class="fa fa-chevron-right"></i> Technology</a></li>
+						<li><a><i class="fa fa-chevron-right"></i> Sports</a></li>
+						<li><a><i class="fa fa-chevron-right"></i> Living</a></li>
+					</div>
+					<div class="col-lg-3 id="footer_company">
+						<h4>HELP</h4>
+						<li><a><i class="fa fa-chevron-right"></i> Payments</a></li>
+						<li><a><i class="fa fa-chevron-right"></i> Subscription</a></li>
+						<li><a><i class="fa fa-chevron-right"></i> Contact Us</a></li>
+						<li><a><i class="fa fa-chevron-right"></i> Email Newsletter</a></li>
+					</div>
+					<div class="col-lg-3 id="footer_company">
+						<h4>Subscription</h4>
+						<li><a><i class="fa fa-chevron-right"></i> Become a Subscriber?</a></li>
+						<li><a><i class="fa fa-chevron-right"></i> Renew Subscription</a></li>
+						<li><a><i class="fa fa-chevron-right"></i> Cancel Subscription?</a></li>
+						<li><a><i class="fa fa-chevron-right"></i> Help on Subscribing?</a></li>
+					</div>
+				</div>
+				<div class="col-lg-4 col-12" id="right_footer">
+					<div class="subscription">
+						<h4>Subscribe To Our Newsletter</h4>
+						<div class="subscription_input">
+							<input type="text" placeholder="  Enter your Email">
+							<button class="btn-success">Subscribe</button>
+						</div>
+					</div>
+				</div>
+			</div>
+           
+          
+        </div>
+        <div class="container" id="footer_divider"></div>
+        <div class="container" id="bottom_footer">
+            <div class="contact">
+                <i class="fa fa-phone" id="ph"></i>
+                <p>+01 4356894</p>
+                <i class="fa fa-envelope"></i>
+                <p>1blog@gmail.com</p>
+                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+
 	  <div class="fixedfoot">
 		  <div class="container"> 
 			<div class="foot1">
-				<button class="search icon-button">
+				<button class="home icon-button">
 					<img src="images/home.svg" />
 				  </button>
 				  <p>Home</p>
@@ -697,17 +810,21 @@
 		  </div>
 
 		  <div class="foot1">
+			  <a href="#footer" style="text-align: center;">
 			<button class="bell icon-button">
 				<img src="images/bell.svg" />
 			  </button>
 			  <p>Notifications</p>
+			</a>
 		  </div>
 
 		  <div class="foot1">
+			<a href="#login_form" style="text-align: center;">
 			<button class="user icon-button">
 				<img src="images/user.svg" />
 				<p>Account</p>
 			  </button>
+			  </a>
 		  </div>
 
 
@@ -729,7 +846,7 @@
 
       <!-- logo -->
       <div class="logo">
-        <img src="images/logo.svg" alt="Katen" />
+        <img src="images/logo.png" />
       </div>
 
       <!-- menu -->
@@ -737,27 +854,12 @@
         <ul class="vertical-menu">
           <li class="active">
             <a href="index.html">Home</a>
-            <ul class="submenu">
-              <li><a href="index.html">Magazine</a></li>
-              <li><a href="personal.html">Personal</a></li>
-              <li><a href="personal-alt.html">Personal Alt</a></li>
-              <li><a href="minimal.html">Minimal</a></li>
-              <li><a href="classic.html">Classic</a></li>
-            </ul>
           </li>
-          <li><a href="category.html">Lifestyle</a></li>
-          <li><a href="category.html">Inspiration</a></li>
-          <li>
-            <a href="#">Pages</a>
-            <ul class="submenu">
-              <li><a href="category.html">Category</a></li>
-              <li><a href="blog-single.html">Blog Single</a></li>
-              <li><a href="blog-single-alt.html">Blog Single Alt</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#latest">Latest Posts</a></li>
+          <li><a href="#trending">Trending Posts</a></li>
+		  <li><a href="#inspiration">Inspiration</a></li>
+		  <li><a href="#all_cat">All Categories</a></li>
+		  <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -800,6 +902,7 @@
 		</div>
 	</div>
 
+
     <!-- JAVA SCRIPTS -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -807,5 +910,40 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.sticky-sidebar.min.js"></script>
     <script src="js/custom.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+		
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			  // Prevent default anchor click behavior
+			  event.preventDefault();
+		
+			  // Store hash
+			  var hash = this.hash;
+		
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+		
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			  });
+			} // End if
+		  });
+		});
+	</script>
+
+<script>
+	AOS.init();
+  </script>
+
+
+
   </body>
 </html>
